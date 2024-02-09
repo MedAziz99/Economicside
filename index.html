@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec navigation et logo</title>
+    <style>
+        .container{
+            float: right;
+            font-family: arial;
+            background-color: #374254;
+            height: 650px;
+            margin-top: 0;
+            box-shadow: 0px 0px 8px rgba(55, 66, 84, 0.9), 
+                0px 8px 12px rgba(55, 66, 84, 0.8), 
+                0px 8px 18px rgba(55, 66, 84, 0.5), 
+                0px 8px 30px rgba(55, 66, 84, 0.4), 
+                0px 8px 60px rgba(55, 66, 84, 0.3);
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin-right: 100px;
+            margin-top: 100px;
+            padding: 0;
+            text-align: left;
+            display: block; /* Change to inline-block */
+        }
+        nav ul li {
+            display: block;
+            margin-bottom: 30px;
+        }
+        nav ul li a {
+            color: #ececec;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 30px;
+        }
+        nav ul li:hover {
+            background-color: #ececec;
+            
+        }
+        nav ul li a:hover{
+            color: #374254;
+        }
+        nav ul.sub-menu {
+            display: none;
+            position: absolute;
+            background-color: #ececec;
+            border: 1px solid #374254;
+            padding: 30px;
+            top:30px;
+            right: 250px;
+            width: 130px;
+            
+        }
+        nav ul.sub-menu li {
+            display: block;
+        }
+        nav ul.sub-menu li a {
+            color: #374254;
+            padding: 5px;
+            text-decoration: none;
+        }
+        nav ul li:hover ul.sub-menu {
+            display: block;
+        }
+        img{
+            width: 800px;
+        }
+        .ASP{
+            text-align: left;
+            color: #374254;
+            font-family: arial;
+            margin-left:30px;
+        }
+        .Description{
+            font-size: 24px;
+            color: black;
+            font-family: arial;
+        }
+        .Description span{
+            font-weight: bolder;
+        }
+        footer{
+            
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+    float: none;
+    height: auto;
+    margin-top: 0;
+}
+
+nav ul {
+    margin-right: 0;
+    margin-top: 10px; /* Réduire la marge supérieure */
+}
+
+nav ul li {
+    margin-bottom: 15px; /* Réduire l'espacement entre les éléments */
+}
+
+nav ul li a {
+    font-size: 24px; /* Réduire la taille de la police */
+}
+
+nav ul.sub-menu {
+    right: auto;
+    width: auto;
+}
+
+nav ul.sub-menu li {
+    display: inline-block; /* Afficher les sous-menus en ligne */
+    margin-right: 10px; /* Ajouter un espace entre les éléments */
+}
+
+img {
+    width: 100%; /* Adapter la largeur de l'image à la largeur de l'écran */
+}
+
+.ASP h2 {
+    font-size: 24px; /* Réduire la taille de la police */
+}
+
+.Description p {
+    font-size: 18px; /* Réduire la taille de la police */
+}
+
+        }
+
+    </style>
+</head>
+<body>
+
+<img src="logo.png" alt="Logo de l'entreprise">
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="#">Résumé</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Theme 1</a></li>
+                    <li><a href="#">Theme 2</a></li>
+                    <li><a href="#">Theme 3</a></li>
+                    <li><a href="#">Theme 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Series</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Theme 1</a></li>
+                    <li><a href="#">Theme 2</a></li>
+                    <li><a href="#">Theme 3</a></li>
+                    <li><a href="#">Theme 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Devoires</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Devoires controle</a></li>
+                    <li><a href="#">Devoires synthese</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Manuel Scolaire</a></li>
+            <li><a href="#">Extrait Bac</a></li>
+            <li><a href="#">Equipe</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="ASP">
+<h2>Alaoui Student Production</h2>
+</div>
+<div class="Description">
+    <p>
+        <span>E</span>conomic <span>S</span>ide est une plateforme qui propose une large gamme de cours 
+        et de séries dans le matiere de l'économie pour les lycéens selon le système éducatif tunisien
+    </p>
+</div>
+
+
+</body>
+</html>
